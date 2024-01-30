@@ -11,22 +11,27 @@
 <body>
     <div class="app">
         <header>
-            <form>
-                <input type="search" placeholder="Enter a city.." required />
-                <input type="submit" value="Search" />
+            <form class="search-form">
+                <input type="search" placeholder="Enter a city.." required class="search-form-input" />
+                <input type="submit" value="Search" class="search-form-button" />
             </form>
         </header>
         <main>
-            <div>
-                <h1> Manchester</h1>
-                <p>
-                    Tuesday 11:33, overcast clouds
-                    <br />
-                    Humidity: 89%, Wind: 3.6km/h
-                </p>
-            </div>
-            <div>
-                🌥️ 7°C
+            <div class="data">
+                <div>
+                    <h1 class="city"> Manchester</h1>
+                    <p class="details">
+                        Tuesday 11:33, overcast clouds
+                        <br />
+                        Humidity: <strong>89%</strong>, Wind: <strong>3.6km/h</strong>
+
+                    </p>
+                </div>
+                <div class="tempcontainer">
+                    <div class="icon">🌥️</div>
+                    <div class="value">7</div>
+                    <div class="unit">°C</div>
+                </div>
             </div>
 
         </main>
