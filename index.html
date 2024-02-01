@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <title>Document</title>
 </head>
 
@@ -20,7 +21,7 @@
         <main>
             <div class="data">
                 <div>
-                    <h1 class="city" id="city"> Manchester</h1>
+                    <h1 class="city" id="city"> </h1>
                     <p class="details">
                         Tuesday 11:33, overcast clouds
                         <br />
@@ -30,7 +31,7 @@
                 </div>
                 <div class="tempcontainer">
                     <div class="icon">🌥️</div>
-                    <div class="value">7</div>
+                    <div class="value" id="temperature"></div>
                     <div class="unit">°C</div>
                 </div>
             </div>
