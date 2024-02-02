@@ -10,7 +10,9 @@ function updateInfo(responce){
     let timeElement = document.querySelector("#time");
     let date = new Date (responce.data.time * 1000);
 
+let iconElement = document.querySelector("#icon")
 
+iconElement.innerHTML = `<img src="${responce.data.condition.icon_url}" class="icon" />`
 
 
 
